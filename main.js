@@ -1,5 +1,5 @@
 let list = document.getElementById("list")
-let input = document.querySelector("#input")
+let inputs = document.querySelector("#input")
 let btn = document.getElementById("button")
 let from = document.querySelector("#formda")
 
@@ -8,7 +8,7 @@ from.addEventListener('submit', (e) => {
 
   let item = document.createElement('li')
   item.classList = "items"
-  item.textContent = input.value
+  item.textContent = inputs.value
 
   let close = document.createElement('button')
   close.classList = "buttuon"
@@ -20,7 +20,7 @@ from.addEventListener('submit', (e) => {
   })
   
   list.append(item)
-  input.value = ""
+  inputs.value = ""
 })
 
 
